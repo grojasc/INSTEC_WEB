@@ -231,98 +231,84 @@ export const clientesData: {
     nombre: "ANDRITZ",
     sector: "Ingeniería Industrial",
     años: "2018-2024",
-    servicios: ["Ultrasonido", "Radiografía", "Inspección Visual"],
-    logo: "https://commons.wikimedia.org/wiki/Special:FilePath/Andritz_Logo.svg"
+    servicios: ["Ultrasonido", "Radiografía", "Inspección Visual"]
   },
   {
     nombre: "Revesol",
     sector: "Soluciones Industriales",
     años: "2019-2024",
-    servicios: ["Partículas Magnéticas", "Líquidos Penetrantes"],
-    logo: "https://brandfetch.com/revesol.cl/logo.svg"
+    servicios: ["Partículas Magnéticas", "Líquidos Penetrantes"]
   },
   {
     nombre: "Maestranza Diesel (MD)",
     sector: "Metalmecánica",
     años: "2017-2024",
-    servicios: ["Ultrasonido", "Corrientes Eddy"],
-    logo: "https://www.md.cl/wp-content/uploads/2022/09/cropped-md-favicon-32x32.png"
+    servicios: ["Ultrasonido", "Corrientes Eddy"]
   },
   {
     nombre: "Prosoltec",
     sector: "Soluciones Técnicas",
     años: "2020-2024",
-    servicios: ["Radiografía", "Inspección Visual"],
-    logo: "https://i0.wp.com/prosoltecejes.cl/wp-content/uploads/2024/07/cropped-logoprosoltec-png.webp?ssl=1"
+    servicios: ["Radiografía", "Inspección Visual"]
   },
   {
     nombre: "Sermin",
     sector: "Servicios Mineros",
     años: "2016-2024",
-    servicios: ["Ultrasonido", "Partículas Magnéticas"],
-    logo: "https://www.sermin.cl/wp-content/uploads/2020/11/cropped-logoser-min.png"
+    servicios: ["Ultrasonido", "Partículas Magnéticas"]
   },
   {
     nombre: "Maicon Metal",
     sector: "Metalmecánica",
     años: "2019-2024",
-    servicios: ["Líquidos Penetrantes", "Inspección Visual"],
-    logo: "https://www.maiconmetal.cl/wp-content/uploads/2021/08/cropped-logo.png"
+    servicios: ["Líquidos Penetrantes", "Inspección Visual"]
   },
   {
     nombre: "Colbún",
     sector: "Energía",
     años: "2015-2024",
-    servicios: ["Ultrasonido", "Radiografía"],
-    logo: "https://companieslogo.com/img/orig/CBUN.SN_BIG-1d79c1f4.png"
+    servicios: ["Ultrasonido", "Radiografía"]
   },
   {
     nombre: "Minera Candelaria",
     sector: "Minería",
     años: "2018-2024",
-    servicios: ["Corrientes Eddy", "Inspección Visual"],
-    logo: "https://compromisominero.cl/wp-content/uploads/2022/03/logo-candelaria.png"
+    servicios: ["Corrientes Eddy", "Inspección Visual"]
   },
   {
     nombre: "Minera Las Cenizas",
     sector: "Minería",
     años: "2017-2024",
-    servicios: ["Ultrasonido", "Partículas Magnéticas"],
-    logo: "https://www.cenizas.cl/wp-content/uploads/img-logo-cenizas.png"
+    servicios: ["Ultrasonido", "Partículas Magnéticas"]
   },
   {
     nombre: "Sandvik",
     sector: "Ingeniería Industrial",
     años: "2016-2024",
-    servicios: ["Radiografía", "Líquidos Penetrantes"],
-    logo: "https://commons.wikimedia.org/wiki/Special:FilePath/Sandvik_Logo.svg"
+    servicios: ["Radiografía", "Líquidos Penetrantes"]
   },
   {
     nombre: "Ferroman",
     sector: "Metalmecánica",
     años: "2020-2024",
-    servicios: ["Ultrasonido", "Inspección Visual"],
-    logo: "https://www.ferroman.cl/wp-content/uploads/2020/07/cropped-logo-1.png"
+    servicios: ["Ultrasonido", "Inspección Visual"]
   },
   {
     nombre: "Agecomet",
     sector: "Servicios Industriales",
     años: "2019-2024",
-    servicios: ["Partículas Magnéticas", "Corrientes Eddy"],
-    logo: "https://www.agecomet.cl/wp-content/uploads/2022/05/cropped-logo-agecomet.png"
+    servicios: ["Partículas Magnéticas", "Corrientes Eddy"]
   },
   {
     nombre: "Bignotti Hnos.",
     sector: "Construcción Industrial",
     años: "2018-2024",
-    servicios: ["Ultrasonido", "Radiografía"],
-    logo: "https://www.bignottihnos.cl/wp-content/uploads/2019/03/logo.png"
+    servicios: ["Ultrasonido", "Radiografía"]
   },
   {
     nombre: "BUNSA",
     sector: "Servicios Técnicos",
     años: "2021-2024",
-    servicios: ["Líquidos Penetrantes", "Inspección Visual"],
-    logo: "https://www.bunsa.cl/images/logo.png"
+    servicios: ["Líquidos Penetrantes", "Inspección Visual"]
   }
 ];
