@@ -102,8 +102,8 @@ const Footer: FC = () => {
                   className='text-primary mt-1 flex-shrink-0'
                 />
                 <div>
-                  <p className='text-muted/80 text-sm'>+56 2 2555-0123</p>
-                  <p className='text-muted/80 text-sm'>+56 9 5555-0456</p>
+                  <p className='text-muted/80 text-sm'>+569 99972647</p>
+                  <p className='text-muted/80 text-sm'>+569 57589575</p>
                 </div>
               </div>
               <div className='flex items-start gap-3'>
@@ -113,7 +113,7 @@ const Footer: FC = () => {
                   height='20'
                   className='text-primary mt-1 flex-shrink-0'
                 />
-                <p className='text-muted/80 text-sm'>info@instec.cl</p>
+                <p className='text-muted/80 text-sm'>instec@instec.cl</p>
               </div>
               <div className='flex items-start gap-3'>
                 <Icon

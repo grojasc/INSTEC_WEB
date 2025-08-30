@@ -40,13 +40,10 @@ Mensaje: ${formData.mensaje}
 
     // Crear enlaces de mailto para ambos emails
     const email1 = `mailto:instec@instec.cl?subject=Solicitud de Cotización - ${formData.servicio}&body=${encodeURIComponent(emailBody)}`;
-    const email2 = `mailto:g.rojaschacon@gmail.com?subject=Solicitud de Cotización - ${formData.servicio}&body=${encodeURIComponent(emailBody)}`;
+    // Solo usar el email principal de INSTEC
     
-    // Abrir ambos emails
+    // Abrir email
     window.open(email1, '_blank');
-    setTimeout(() => {
-      window.open(email2, '_blank');
-    }, 500);
     
     // Limpiar formulario
     setFormData({
@@ -248,8 +245,7 @@ Mensaje: ${formData.mensaje}
                     <div>
                       <h4 className="nicepage-subheading font-semibold mb-1">Email</h4>
                       <p className="nicepage-text">
-                        instec@instec.cl<br />
-                        g.rojaschacon@gmail.com
+                        instec@instec.cl
                       </p>
                     </div>
                   </div>
@@ -263,8 +259,8 @@ Mensaje: ${formData.mensaje}
                     <div>
                       <h4 className="nicepage-subheading font-semibold mb-1">Teléfono</h4>
                       <p className="nicepage-text">
-                        +56 2 2345-6789<br />
-                        +56 9 8765-4321
+                        +569 99972647<br />
+                        +569 57589575
                       </p>
                     </div>
                   </div>
@@ -303,7 +299,7 @@ Mensaje: ${formData.mensaje}
                     </svg>
                   </div>
                   <div>
-                    <p className="text-red-400 font-semibold">+56 9 2468-1357</p>
+                    <p className="text-red-400 font-semibold">+569 99972647</p>
                     <p className="nicepage-text-small">24 horas / 7 días</p>
                   </div>
                 </div>
