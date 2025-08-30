@@ -1,0 +1,69 @@
+<svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.8" />
+    <stop offset="100%" style="stop-color:#1e40af;stop-opacity:0.6" />
+  </linearGradient>
+  <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.7" />
+    <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.5" />
+  </linearGradient>
+</defs>
+
+<!-- Background -->
+<circle cx="300" cy="300" r="280" fill="url(#gradient1)" opacity="0.1"/>
+<circle cx="300" cy="300" r="220" fill="url(#gradient2)" opacity="0.1"/>
+
+<!-- Main gear -->
+<circle cx="300" cy="300" r="120" stroke="#2563eb" stroke-width="8" fill="none" opacity="0.8"/>
+<circle cx="300" cy="300" r="60" fill="#2563eb" opacity="0.6"/>
+
+<!-- Gear teeth -->
+<rect x="296" y="160" width="8" height="30" fill="#2563eb" opacity="0.8"/>
+<rect x="296" y="410" width="8" height="30" fill="#2563eb" opacity="0.8"/>
+<rect x="160" y="296" width="30" height="8" fill="#2563eb" opacity="0.8"/>
+<rect x="410" y="296" width="30" height="8" fill="#2563eb" opacity="0.8"/>
+
+<!-- Diagonal teeth -->
+<rect x="380" y="200" width="8" height="30" fill="#2563eb" opacity="0.8" transform="rotate(45 384 215)"/>
+<rect x="212" y="370" width="8" height="30" fill="#2563eb" opacity="0.8" transform="rotate(45 216 385)"/>
+<rect x="212" y="200" width="8" height="30" fill="#2563eb" opacity="0.8" transform="rotate(-45 216 215)"/>
+<rect x="380" y="370" width="8" height="30" fill="#2563eb" opacity="0.8" transform="rotate(-45 384 385)"/>
+
+<!-- Smaller gears -->
+<circle cx="150" cy="150" r="50" stroke="#06b6d4" stroke-width="4" fill="none" opacity="0.6"/>
+<circle cx="150" cy="150" r="25" fill="#06b6d4" opacity="0.4"/>
+<rect x="148" y="90" width="4" height="15" fill="#06b6d4" opacity="0.6"/>
+<rect x="148" y="195" width="4" height="15" fill="#06b6d4" opacity="0.6"/>
+<rect x="90" y="148" width="15" height="4" fill="#06b6d4" opacity="0.6"/>
+<rect x="195" y="148" width="15" height="4" fill="#06b6d4" opacity="0.6"/>
+
+<circle cx="450" cy="450" r="40" stroke="#10b981" stroke-width="3" fill="none" opacity="0.6"/>
+<circle cx="450" cy="450" r="20" fill="#10b981" opacity="0.4"/>
+<rect x="448" y="405" width="4" height="10" fill="#10b981" opacity="0.6"/>
+<rect x="448" y="485" width="4" height="10" fill="#10b981" opacity="0.6"/>
+<rect x="405" y="448" width="10" height="4" fill="#10b981" opacity="0.6"/>
+<rect x="485" y="448" width="10" height="4" fill="#10b981" opacity="0.6"/>
+
+<!-- Technical elements -->
+<path d="M100 500 L200 480 L300 500 L400 480 L500 500" stroke="#6b7280" stroke-width="3" fill="none" opacity="0.4"/>
+<circle cx="200" cy="480" r="3" fill="#6b7280"/>
+<circle cx="300" cy="500" r="3" fill="#6b7280"/>
+<circle cx="400" cy="480" r="3" fill="#6b7280"/>
+
+<!-- Measurement lines -->
+<path d="M50 50 L100 50" stroke="#f59e0b" stroke-width="2" opacity="0.7"/>
+<path d="M75 40 L75 60" stroke="#f59e0b" stroke-width="2" opacity="0.7"/>
+<path d="M500 550 L550 550" stroke="#f59e0b" stroke-width="2" opacity="0.7"/>
+<path d="M525 540 L525 560" stroke="#f59e0b" stroke-width="2" opacity="0.7"/>
+
+<!-- Floating elements -->
+<circle cx="80" cy="300" r="3" fill="#8b5cf6" opacity="0.5"/>
+<circle cx="520" cy="200" r="4" fill="#ec4899" opacity="0.5"/>
+<circle cx="100" cy="400" r="2" fill="#f97316" opacity="0.5"/>
+<circle cx="500" cy="100" r="3" fill="#84cc16" opacity="0.5"/>
+
+<!-- Abstract shapes -->
+<polygon points="480,80 500,60 520,80 500,100" stroke="#6366f1" stroke-width="2" fill="none" opacity="0.5"/>
+<rect x="70" y="380" width="15" height="15" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.5" transform="rotate(45 77.5 387.5)"/>
+</svg>

@@ -1,0 +1,374 @@
+@import 'tailwindcss';
+
+@theme {
+  --container-screen-xl: 75rem;
+  --container-screen-2xl: 83.75rem;
+
+  /* Modern Clean Shadows */
+  --shadow-nicepage-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-nicepage-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-nicepage-large: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --shadow-nicepage-hover: 0 12px 40px rgba(0, 212, 170, 0.20);
+
+  /* Modern Transitions */
+  --transition-all: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-transform: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --spacing-8xl: 75rem;
+  --spacing-25: 35.625rem;
+  --spacing-29: 28rem;
+  --spacing-45: 45rem;
+  --spacing-50: 50rem;
+  --spacing-51: 54.375rem;
+  --spacing-85: 21rem;
+  --spacing-94: 22.5rem;
+  --spacing-120: 120rem;
+  --spacing-6_25: 6.25rem;
+  --spacing-70\%: 70%;
+  --spacing-40\%: 40%;
+  --spacing-30\%: 30%;
+  --spacing-80\%: 80%;
+  --spacing-8_5: 8.5rem;
+  --spacing-3_75: 3.75rem;
+
+  --inset-5\%: 5%;
+  --inset-35\%: 35%;
+
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-999: 999;
+
+  /* INSTEC Official Color Scheme */
+  --instec-green: #1DAE61;
+  --color-primary: #1DAE61;
+  --color-primary-dark: #178a4d;
+  --color-primary-light: #2bc570;
+  --color-secondary: #6c5ce7;
+  --color-accent: #fd79a8;
+  --color-success: #1DAE61;
+  --color-warning: #fdcb6e;
+  --color-error: #e84393;
+  
+  /* Text Colors */
+  --color-text-primary: #2d3436;
+  --color-text-secondary: #636e72;
+  --color-text-muted: #b2bec3;
+  --color-text-light: #ddd;
+  
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8f9fa;
+  --color-bg-tertiary: #e9ecef;
+  --color-bg-card: #ffffff;
+  
+  /* Border Colors */
+  --color-border-light: #e9ecef;
+  --color-border-medium: #dee2e6;
+  --color-border-dark: #ced4da;
+  
+  /* Legacy mappings for compatibility */
+  --color-midnight_text: var(--color-text-primary);
+  --color-darkmode: var(--color-bg-primary);
+  --color-grey: var(--color-bg-secondary);
+  --color-border: var(--color-border-light);
+  --color-tealGreen: var(--color-primary);
+  --color-dark_grey: var(--color-bg-tertiary);
+
+  --text-14: 0.875rem;
+  --text-14--line-height: 1.225rem;
+  --text-16: 1rem;
+  --text-16--line-height: 1.6875rem;
+  --text-17: 1.0625rem;
+  --text-17--line-height: 1.4875rem;
+  --text-18: 1.125rem;
+  --text-18--line-height: 1.5rem;
+  --text-21: 1.3125rem;
+  --text-21--line-height: 1.875rem;
+  --text-22: 1.375rem;
+  --text-22--line-height: 2rem;
+  --text-24: 1.5rem;
+  --text-24--line-height: 2rem;
+  --text-28: 1.75rem;
+  --text-28--line-height: 2.25rem;
+  --text-30: 1.875rem;
+  --text-30--line-height: 2.25rem;
+  --text-36: 2.25rem;
+  --text-36--line-height: 2.625rem;
+  --text-40: 2.5rem;
+  --text-40--line-height: 3rem;
+  --text-44: 2.75rem;
+  --text-44--line-height: 1.3;
+  --text-54: 3.375rem;
+  --text-54--line-height: 1.2;
+  --text-70: 4.375rem;
+  --text-70--line-height: 1.2;
+  --text-76: 4.75rem;
+  --text-76--line-height: 1.2;
+  --text-86: 5.375rem;
+  --text-86--line-height: 1.2;
+
+  --background-image-start: url('/images/work/bg-start.png');
+  --background-image-perk: url('/images/perks/perk-bg.png');
+
+  --blur-220: 220px;
+  --blur-400: 400px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-8xl mx-auto;
+  }
+  
+  /* INSTEC Green Utilities */
+  .text-instec-green {
+    color: #1DAE61;
+  }
+  
+  .bg-instec-green {
+    background-color: #1DAE61;
+  }
+  
+  .border-instec-green {
+    border-color: #1DAE61;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  background-color: var(--color-bg-primary);
+}
+
+/* Nicepage 7.12 Component System */
+
+/* Layout Components */
+.nicepage-section {
+  @apply py-12 md:py-20 px-4 md:px-6 relative overflow-hidden;
+}
+
+.nicepage-container {
+  @apply max-w-7xl mx-auto px-4 md:px-6;
+}
+
+.nicepage-grid {
+  @apply grid gap-8 md:gap-12;
+}
+
+/* Card Components */
+.nicepage-card {
+  background-color: var(--color-bg-card);
+  @apply rounded-2xl md:rounded-3xl p-4 md:p-8 border transition-all duration-500;
+  border-color: var(--color-border-light);
+  box-shadow: var(--shadow-nicepage-soft);
+}
+
+.nicepage-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-nicepage-hover);
+  border-color: var(--color-primary);
+}
+
+.nicepage-card-minimal {
+  background-color: var(--color-bg-card);
+  @apply backdrop-blur-sm rounded-2xl p-6 border;
+  border-color: var(--color-border-light);
+}
+
+.nicepage-card-feature {
+  background-color: var(--color-bg-card);
+  @apply rounded-3xl p-10 border;
+  border-color: var(--color-border-medium);
+  box-shadow: var(--shadow-nicepage-medium);
+}
+
+/* Button Components */
+.nicepage-btn {
+  @apply inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 font-semibold text-sm md:text-base rounded-xl md:rounded-2xl transition-all duration-300;
+  box-shadow: var(--shadow-nicepage-soft);
+}
+
+.nicepage-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-nicepage-hover);
+}
+
+.nicepage-btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg-primary);
+  @apply border-2 font-semibold;
+  border-color: var(--color-primary);
+}
+
+.nicepage-btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.nicepage-btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  @apply border-2 font-semibold;
+  border-color: var(--color-primary);
+}
+
+.nicepage-btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg-primary);
+}
+
+.nicepage-btn-outline {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  @apply border-2;
+  border-color: var(--color-border-medium);
+}
+
+.nicepage-btn-outline:hover {
+  background-color: var(--color-bg-tertiary);
+  border-color: var(--color-primary);
+}
+
+.nicepage-btn-large {
+  @apply px-12 py-5 text-lg rounded-3xl;
+}
+
+/* Typography */
+.nicepage-heading {
+  @apply font-bold leading-tight;
+  color: var(--color-text-primary);
+}
+
+.nicepage-heading-hero {
+  @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.nicepage-heading-xl {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  color: var(--color-text-primary);
+}
+
+.nicepage-heading-lg {
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+  color: var(--color-text-primary);
+}
+
+.nicepage-heading-md {
+  @apply text-xl md:text-2xl lg:text-3xl font-semibold;
+  color: var(--color-text-primary);
+}
+
+.nicepage-subheading {
+  @apply text-base md:text-lg font-medium;
+  color: var(--color-text-secondary);
+}
+
+.nicepage-text {
+  @apply text-sm md:text-base leading-relaxed;
+  color: var(--color-text-secondary);
+}
+
+.nicepage-text-small {
+  @apply text-xs md:text-sm;
+  color: var(--color-text-muted);
+}
+
+/* Background Components */
+.nicepage-bg-gradient {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #e9ecef 100%);
+}
+
+.nicepage-bg-pattern {
+  background-color: var(--color-bg-primary);
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 212, 170, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(108, 92, 231, 0.05) 0%, transparent 50%);
+}
+
+.nicepage-bg-mesh {
+  background-color: var(--color-bg-primary);
+  background-image: 
+    linear-gradient(45deg, rgba(153, 227, 158, 0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(153, 227, 158, 0.03) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(29, 200, 205, 0.03) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(29, 200, 205, 0.03) 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+}
+
+/* Image Components */
+.nicepage-image {
+  @apply rounded-2xl overflow-hidden;
+}
+
+.nicepage-image-hero {
+  @apply rounded-3xl overflow-hidden;
+  box-shadow: var(--shadow-nicepage-large);
+}
+
+.nicepage-icon {
+  @apply w-10 h-10 md:w-12 md:h-12 p-2 md:p-3 rounded-xl md:rounded-2xl flex items-center justify-center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-bg-primary);
+}
+
+.nicepage-icon-large {
+  @apply w-12 h-12 md:w-16 md:h-16 p-3 md:p-4 rounded-2xl md:rounded-3xl flex items-center justify-center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-bg-primary);
+}
+
+.blog-details p,
+.blog-details hr {
+  @apply mb-8;
+}
+
+.blog-details hr {
+  @apply border-gray-300;
+}
+
+.blog-details strong {
+  @apply font-bold dark:text-white;
+}
+
+.blog-details ul {
+  @apply mb-8 list-inside list-disc space-y-3;
+}
+
+.blog-details ol {
+  @apply mb-8 list-inside list-decimal space-y-3;
+}
+
+.blog-details h1 {
+  @apply mb-8 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.28];
+}
+
+.blog-details h2 {
+  @apply mb-8 text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl md:text-[35px] md:leading-[1.28];
+}
+
+.blog-details h3 {
+  @apply mb-6 text-2xl font-bold dark:text-white sm:text-[28px] sm:leading-[40px];
+}

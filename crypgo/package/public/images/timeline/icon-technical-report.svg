@@ -1,0 +1,29 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Documento principal -->
+<rect x="4" y="2" width="14" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+<!-- Encabezado del informe -->
+<rect x="4" y="2" width="14" height="4" rx="2" fill="currentColor" opacity="0.1"/>
+<path d="M6 4L16 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<!-- Logo/sello -->
+<circle cx="8" cy="6" r="1" stroke="currentColor" stroke-width="1" fill="none"/>
+<path d="M7.5 6L8.5 6" stroke="currentColor" stroke-width="0.5"/>
+<!-- Contenido del informe -->
+<path d="M6 8L16 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M6 10L14 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M6 12L15 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M6 14L13 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<!-- Gráfico/resultado -->
+<rect x="10" y="15" width="6" height="4" rx="0.5" stroke="currentColor" stroke-width="1" fill="none"/>
+<path d="M11 18L12 16L13 17L14 15L15 16" stroke="currentColor" stroke-width="1.5" fill="none"/>
+<!-- Firma/aprobación -->
+<path d="M6 18L9 18" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+<circle cx="7.5" cy="17" r="0.5" fill="currentColor"/>
+<!-- Clip/sujetador -->
+<rect x="9" y="1" width="2" height="3" rx="0.5" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.3"/>
+<!-- Sello de calidad -->
+<circle cx="15" cy="6" r="1.5" stroke="currentColor" stroke-width="1" fill="none"/>
+<path d="M14 6L15 6.5L16 6" stroke="currentColor" stroke-width="1" fill="none"/>
+<!-- Páginas adicionales (indicando documento completo) -->
+<rect x="5" y="1" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1" fill="none" opacity="0.3"/>
+<rect x="6" y="0.5" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1" fill="none" opacity="0.2"/>
+</svg>

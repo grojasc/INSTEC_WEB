@@ -1,0 +1,14 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Transductor ultrasónico -->
+<rect x="8" y="2" width="8" height="4" rx="1" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+<path d="M12 6V8" stroke="currentColor" stroke-width="2"/>
+<!-- Ondas ultrasónicas -->
+<path d="M12 8C14 8 16 10 16 12C16 14 14 16 12 16C10 16 8 14 8 12C8 10 10 8 12 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+<path d="M12 10C13 10 14 11 14 12C14 13 13 14 12 14C11 14 10 13 10 12C10 11 11 10 12 10Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+<circle cx="12" cy="12" r="1" fill="currentColor"/>
+<!-- Pieza a inspeccionar -->
+<rect x="4" y="18" width="16" height="4" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+<!-- Ondas representativas -->
+<path d="M6 16C7 15 8 15 9 16" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.7"/>
+<path d="M15 16C16 15 17 15 18 16" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.7"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Equipo de ultrasonido -->
+<rect x="2" y="8" width="6" height="10" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+<rect x="3" y="10" width="4" height="3" rx="0.5" fill="currentColor"/>
+<circle cx="5" cy="15" r="1" stroke="currentColor" stroke-width="1.5" fill="none"/>
+<!-- Cable conectando -->
+<path d="M8 12L12 8" stroke="currentColor" stroke-width="2"/>
+<!-- Transductor -->
+<rect x="12" y="6" width="3" height="4" rx="0.5" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+<!-- Pieza siendo inspeccionada -->
+<rect x="10" y="14" width="12" height="6" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+<!-- Ondas ultrasónicas -->
+<path d="M13.5 10C15 10 16 12 16 14" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.7"/>
+<path d="M13.5 10C14.5 10 15.2 11.5 15.2 13" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+<!-- Defecto detectado -->
+<circle cx="16" cy="17" r="1" fill="currentColor" opacity="0.6"/>
+<!-- Pantalla del equipo -->
+<rect x="3" y="10" width="4" height="2" rx="0.2" stroke="currentColor" stroke-width="0.5" fill="none"/>
+<path d="M4 10.5L6 10.5" stroke="currentColor" stroke-width="0.5"/>
+<path d="M4 11.5L5.5 11.5" stroke="currentColor" stroke-width="0.5"/>
+<!-- Indicadores de medición -->
+<path d="M20 8L22 8" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+<path d="M20 10L22 10" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+<path d="M20 12L21.5 12" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+</svg>

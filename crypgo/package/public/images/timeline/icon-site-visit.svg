@@ -1,0 +1,25 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Edificio/planta industrial -->
+<rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+<rect x="2" y="16" width="20" height="4" rx="1" stroke="currentColor" stroke-width="2" fill="none"/>
+<!-- Ventanas del edificio -->
+<rect x="6" y="8" width="2" height="3" fill="currentColor"/>
+<rect x="10" y="8" width="2" height="3" fill="currentColor"/>
+<rect x="14" y="8" width="2" height="3" fill="currentColor"/>
+<rect x="6" y="13" width="2" height="3" fill="currentColor"/>
+<rect x="10" y="13" width="2" height="3" fill="currentColor"/>
+<rect x="14" y="13" width="2" height="3" fill="currentColor"/>
+<!-- Puerta principal -->
+<rect x="17" y="12" width="2" height="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+<!-- Persona con casco -->
+<circle cx="18" cy="4" r="1.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+<rect x="17.5" y="3.5" width="1" height="1" stroke="currentColor" stroke-width="1" fill="none"/>
+<!-- Clipboard/checklist -->
+<rect x="8" y="2" width="4" height="6" rx="0.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+<path d="M9 4L11 4" stroke="currentColor" stroke-width="1"/>
+<path d="M9 5.5L11 5.5" stroke="currentColor" stroke-width="1"/>
+<path d="M9 7L10 7" stroke="currentColor" stroke-width="1"/>
+<!-- Checkmarks -->
+<path d="M8.5 4L9 4.5L9.5 4" stroke="currentColor" stroke-width="1" fill="none"/>
+<path d="M8.5 5.5L9 6L9.5 5.5" stroke="currentColor" stroke-width="1" fill="none"/>
+</svg>
