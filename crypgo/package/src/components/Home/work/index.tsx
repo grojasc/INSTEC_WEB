@@ -1,6 +1,7 @@
 'use client'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import ServiceImageCarousel from './ServiceImageCarousel'
 
 const Work = () => {
   const ref = useRef(null)
@@ -87,35 +88,253 @@ const Work = () => {
             </motion.p>
           </div>
 
+          {/* Large Image Section with Dynamic Transitions */}
+          <motion.div
+            initial={{ y: 40, opacity: 0 }}
+            animate={inView ? { y: 0, opacity: 1 } : { y: 40, opacity: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="relative h-64 md:h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl mb-16 group"
+          >
+            {/* Animated Background Gradient */}
+            <motion.div 
+              className="absolute inset-0"
+              animate={{
+                background: [
+                  'linear-gradient(45deg, rgba(29, 174, 97, 0.8), rgba(108, 92, 231, 0.8))',
+                  'linear-gradient(135deg, rgba(108, 92, 231, 0.8), rgba(253, 121, 168, 0.8))',
+                  'linear-gradient(225deg, rgba(253, 121, 168, 0.8), rgba(29, 174, 97, 0.8))',
+                  'linear-gradient(315deg, rgba(29, 174, 97, 0.8), rgba(108, 92, 231, 0.8))'
+                ]
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+            />
+            
+            {/* Floating Geometric Shapes */}
+            <motion.div
+              className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full"
+              animate={{
+                y: [-10, 10, -10],
+                x: [-5, 5, -5],
+                scale: [1, 1.1, 1]
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+            />
+            <motion.div
+              className="absolute bottom-10 right-10 w-16 h-16 bg-white/15 rounded-lg rotate-45"
+              animate={{
+                y: [10, -10, 10],
+                x: [5, -5, 5],
+                rotate: [45, 90, 45]
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+            />
+            <motion.div
+              className="absolute top-1/3 right-1/4 w-12 h-12 bg-white/20 rounded-full"
+              animate={{
+                y: [-15, 15, -15],
+                scale: [1, 1.3, 1],
+                opacity: [0.2, 0.6, 0.2]
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+            />
+
+            {/* Dynamic Service Image Carousel */}
+            <ServiceImageCarousel />
+            
+            {/* Content with Advanced Animations */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-white px-6 max-w-4xl">
+                <motion.h3 
+                  className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={inView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  Tecnología de{' '}
+                  <motion.span
+                    animate={{ 
+                      textShadow: [
+                        '0px 0px 10px rgba(255,255,255,0.5)',
+                        '0px 0px 20px rgba(255,255,255,0.8)',
+                        '0px 0px 10px rgba(255,255,255,0.5)'
+                      ]
+                    }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                  >
+                    Vanguardia
+                  </motion.span>
+                </motion.h3>
+                <motion.p 
+                  className="text-lg md:text-xl opacity-90 max-w-2xl"
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={inView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+                  transition={{ duration: 0.8, delay: 1 }}
+                >
+                  Equipos de última generación para garantizar la máxima precisión en nuestros servicios
+                </motion.p>
+                
+                {/* Animated CTA Button */}
+                <motion.button
+                  className="mt-8 px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full font-semibold border border-white/30 hover:bg-white/30 transition-all duration-300"
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={inView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+                  transition={{ duration: 0.8, delay: 1.2 }}
+                  whileHover={{ 
+                    scale: 1.05,
+                    boxShadow: '0 0 30px rgba(255,255,255,0.3)'
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Conocer Más
+                </motion.button>
+              </div>
+            </div>
+
+            {/* Animated Border Effect */}
+            <motion.div
+              className="absolute inset-0 rounded-3xl border-2 border-white/20"
+              animate={{
+                borderColor: [
+                  'rgba(255,255,255,0.2)',
+                  'rgba(255,255,255,0.6)',
+                  'rgba(255,255,255,0.2)'
+                ]
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+            />
+          </motion.div>
+
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
-                initial={{ y: 60, opacity: 0 }}
-                animate={inView ? { y: 0, opacity: 1 } : { y: 60, opacity: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 + (index * 0.1) }}
-                className="nicepage-card group hover:scale-[1.02] transition-all duration-500"
+                initial={{ y: 60, opacity: 0, scale: 0.9 }}
+                animate={inView ? { y: 0, opacity: 1, scale: 1 } : { y: 60, opacity: 0, scale: 0.9 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: 0.6 + (index * 0.15),
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 15
+                }}
+                whileHover={{ 
+                  scale: 1.03,
+                  y: -10,
+                  transition: { duration: 0.3 }
+                }}
+                whileTap={{ scale: 0.98 }}
+                className="nicepage-card group relative overflow-hidden"
               >
-                <div className="text-center space-y-6">
-                  <div className="nicepage-icon-large mx-auto">
+                {/* Hover gradient overlay */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  initial={false}
+                />
+
+                <div className="text-center space-y-6 relative z-10">
+                  <motion.div
+                    className="nicepage-icon-large mx-auto relative"
+                    whileHover={{ rotate: [0, -10, 10, 0] }}
+                    transition={{ duration: 0.5 }}
+                  >
                     {service.icon}
-                  </div>
+                    {/* Icon glow effect */}
+                    <motion.div
+                      className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                      animate={{
+                        scale: [1, 1.1, 1]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        repeatType: "reverse"
+                      }}
+                    />
+                  </motion.div>
+                  
                   <div className="space-y-4">
-                    <h3 className="text-xl font-semibold" style={{color: 'var(--color-text-primary)'}}>{service.title}</h3>
-                    <p className="nicepage-text">{service.description}</p>
+                    <motion.h3
+                      className="text-xl font-semibold group-hover:text-primary transition-colors duration-300"
+                      style={{color: 'var(--color-text-primary)'}}
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      {service.title}
+                    </motion.h3>
+                    
+                    <motion.p
+                      className="nicepage-text"
+                      initial={{ opacity: 1 }}
+                      whileHover={{ opacity: 0.9 }}
+                    >
+                      {service.description}
+                    </motion.p>
+                    
                     <div className="space-y-3">
-                      <div className="text-sm font-medium" style={{color: 'var(--color-text-secondary)'}}>Servicios incluidos:</div>
+                      <div className="text-sm font-medium" style={{color: 'var(--color-text-secondary)'}}>
+                        Servicios incluidos:
+                      </div>
                       <div className="space-y-2">
                         {service.features.map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-center gap-3 justify-center">
-                            <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                          <motion.div
+                            key={featureIndex}
+                            className="flex items-center gap-3 justify-center"
+                            initial={{ x: 0 }}
+                            whileHover={{ x: 5 }}
+                            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                          >
+                            <motion.div
+                              className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"
+                              animate={{
+                                scale: [1, 1.2, 1]
+                              }}
+                              transition={{
+                                duration: 2,
+                                delay: featureIndex * 0.2,
+                                repeat: Infinity,
+                                repeatType: "reverse"
+                              }}
+                            />
                             <span className="nicepage-text-small text-center">{feature}</span>
-                          </div>
+                          </motion.div>
                         ))}
                       </div>
                     </div>
                   </div>
+
+                  {/* Hover action button */}
+                  <motion.div
+                    className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0"
+                  >
+                    <motion.button
+                      className="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-primary-dark transition-colors duration-300"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Más información
+                    </motion.button>
+                  </motion.div>
                 </div>
               </motion.div>
             ))}

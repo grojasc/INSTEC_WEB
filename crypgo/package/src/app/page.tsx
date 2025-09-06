@@ -1,9 +1,7 @@
 import React from 'react'
 import Hero from '@/components/Home/Hero'
-import Nosotros from '@/components/Home/nosotros'
+import NosotrosCompact from '@/components/Home/nosotros/compact'
 import Work from '@/components/Home/work'
-import TimeLine from '@/components/Home/timeline'
-import Trabajos from '@/components/Home/trabajos'
 import Clientes from '@/components/Home/clientes'
 import Contacto from '@/components/Home/contacto'
 import { Metadata } from 'next'
@@ -17,10 +15,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Nosotros />
+      <NosotrosCompact />
       <Work />
-      <TimeLine />
-      <Trabajos />
       <Clientes />
       <Contacto />
     </main>

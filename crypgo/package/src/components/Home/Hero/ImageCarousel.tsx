@@ -61,7 +61,7 @@ const ImageCarousel = () => {
   return (
     <div className="relative w-full">
       {/* Main carousel container */}
-      <div className="relative h-80 rounded-2xl overflow-hidden bg-gray-100">
+      <div className="relative h-96 md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden bg-gray-100 shadow-2xl">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
