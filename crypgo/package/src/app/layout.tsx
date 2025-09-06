@@ -4,6 +4,7 @@ import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 import { ThemeProvider } from 'next-themes'
 import ScrollToTop from '@/components/ScrollToTop'
+import FloatingContact from '@/components/floating-contact'
 import Aoscompo from '@/utils/aos'
 
 const inter = Inter({ 
@@ -30,6 +31,7 @@ export default function RootLayout({
             <Footer />
           </Aoscompo>
           <ScrollToTop />
+          <FloatingContact />
         </ThemeProvider>
       </body>
     </html>
