@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(rmdir:*)",
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:www.option.tech)",
+      "Bash(cp:*)",
+      "Bash(npm run lint)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "defaultMode": "acceptEdits"
+  }
+}
